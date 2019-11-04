@@ -14,7 +14,6 @@ button {
   font-family: inherit;
   font-weight: inherit;
   color: inherit;
-  -webkit-appearance: none;
   appearance: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -173,7 +172,7 @@ label[for='toggle-all'] {
 
 .todo-list li .toggle {
   text-align: center;
-  width: 40px;
+  width: 600px;
   /* auto, since non-WebKit browsers doesn't support input styling */
   height: auto;
   position: absolute;
@@ -181,8 +180,8 @@ label[for='toggle-all'] {
   bottom: 0;
   margin: auto 0;
   border: none; /* Mobile Safari */
+  appearance: none; 
   -webkit-appearance: none;
-  appearance: none;
 }
 
 .todo-list li .toggle:after {
@@ -358,7 +357,6 @@ html .clear-completed:active {
   .toggle-all {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    -webkit-appearance: none;
     appearance: none;
   }
 }
@@ -371,14 +369,16 @@ html .clear-completed:active {
   .filters {
     bottom: 10px;
   }
-}
-
-.author {
+  .author {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.author a {
+  }
+  .author a {
     color: #b83f45;
+  }
+} 
+
+li:hover {
+    background-color: #bebebe;
+    font-weight: bold;
 }
-  
